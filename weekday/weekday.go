@@ -38,7 +38,7 @@ func DayOfWeek(d Date) (int, error) {
 		return 0, ErrInvalidDate
 	}
 	y, m := d.Year, d.Month
-	if m < 2 {
+	if m < 3 {
 		m += 12
 		y--
 	}
