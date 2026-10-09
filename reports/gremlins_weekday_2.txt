@@ -1,0 +1,73 @@
+gremlins unleash --timeout-coefficient 50 --workers 1 ./weekday
+Starting...
+Gathering coverage... go: no module dependencies to download
+done in 287.812583ms
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:42:7
+      KILLED CONDITIONALS_NEGATION at weekday.go:42:7
+      KILLED INCREMENT_DECREMENT at weekday.go:44:4
+      KILLED ARITHMETIC_BASE at weekday.go:46:11
+      KILLED ARITHMETIC_BASE at weekday.go:46:18
+      KILLED ARITHMETIC_BASE at weekday.go:47:50
+      KILLED ARITHMETIC_BASE at weekday.go:47:43
+      KILLED ARITHMETIC_BASE at weekday.go:47:37
+      KILLED ARITHMETIC_BASE at weekday.go:47:31
+      KILLED ARITHMETIC_BASE at weekday.go:47:27
+      KILLED ARITHMETIC_BASE at weekday.go:47:14
+      KILLED ARITHMETIC_BASE at weekday.go:47:24
+      KILLED ARITHMETIC_BASE at weekday.go:47:18
+      KILLED ARITHMETIC_BASE at weekday.go:47:21
+      KILLED ARITHMETIC_BASE at weekday.go:47:34
+      KILLED ARITHMETIC_BASE at weekday.go:47:40
+      KILLED ARITHMETIC_BASE at weekday.go:47:46
+      KILLED ARITHMETIC_BASE at weekday.go:48:17
+      KILLED ARITHMETIC_BASE at weekday.go:48:14
+      KILLED ARITHMETIC_BASE at weekday.go:48:11
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:54:7
+      KILLED CONDITIONALS_NEGATION at weekday.go:54:7
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:54:21
+      KILLED CONDITIONALS_NEGATION at weekday.go:54:21
+      KILLED INVERT_NEGATIVES at weekday.go:57:16
+      KILLED ARITHMETIC_BASE at weekday.go:57:16
+      KILLED CONDITIONALS_NEGATION at weekday.go:63:9
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:66:12
+      KILLED CONDITIONALS_NEGATION at weekday.go:66:12
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:72:8
+      KILLED CONDITIONALS_NEGATION at weekday.go:72:8
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:72:23
+      KILLED CONDITIONALS_NEGATION at weekday.go:72:23
+      KILLED CONDITIONALS_NEGATION at weekday.go:76:9
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:80:20
+      KILLED CONDITIONALS_NEGATION at weekday.go:80:20
+   TIMED OUT INCREMENT_DECREMENT at weekday.go:80:29
+      KILLED CONDITIONALS_NEGATION at weekday.go:82:8
+      KILLED INCREMENT_DECREMENT at weekday.go:83:9
+      KILLED CONDITIONALS_NEGATION at weekday.go:93:9
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:97:20
+      KILLED CONDITIONALS_NEGATION at weekday.go:97:20
+   TIMED OUT INCREMENT_DECREMENT at weekday.go:97:29
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:99:8
+      KILLED CONDITIONALS_NEGATION at weekday.go:99:8
+      KILLED INCREMENT_DECREMENT at weekday.go:100:9
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:108:10
+      KILLED CONDITIONALS_NEGATION at weekday.go:108:10
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:108:23
+      KILLED CONDITIONALS_NEGATION at weekday.go:108:23
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:108:36
+      KILLED CONDITIONALS_NEGATION at weekday.go:108:36
+      KILLED CONDITIONALS_NEGATION at weekday.go:113:13
+      KILLED ARITHMETIC_BASE at weekday.go:113:10
+      KILLED CONDITIONALS_NEGATION at weekday.go:113:31
+      KILLED ARITHMETIC_BASE at weekday.go:113:26
+      KILLED CONDITIONALS_NEGATION at weekday.go:113:48
+      KILLED ARITHMETIC_BASE at weekday.go:113:43
+      KILLED CONDITIONALS_NEGATION at weekday.go:127:13
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:127:29
+      KILLED CONDITIONALS_NEGATION at weekday.go:127:29
+      KILLED CONDITIONALS_BOUNDARY at weekday.go:127:43
+      KILLED CONDITIONALS_NEGATION at weekday.go:127:43
+
+Mutation testing completed in 1 minute 8 seconds
+Killed: 61, Lived: 0, Not covered: 0
+Timed out: 2, Not viable: 0, Skipped: 0
+Test efficacy: 100.00%
+Mutator coverage: 100.00%

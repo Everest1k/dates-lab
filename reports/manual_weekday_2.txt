@@ -1,0 +1,11 @@
+./scripts/manual_mutants.sh mutants/weekday.txt
+ID    РЕЗУЛЬТАТ ОПИСАНИЕ
+MB1   KILLED      WeekdayName: опечатка в названии дня (заглавная буква)
+MB2   KILLED      IsWeekend: воскресенье не считается выходным
+MB3   KILLED      WorkdaysInMonth: пятница не считается рабочим днём
+MB4   KILLED      CountWeekdayInMonth: последний день месяца не учитывается
+MB5   KILLED      daysInMonth: в ноябре 31 день
+MB6   KILLED      isValid: день 0 считается допустимым
+----
+Убито: 6, выжило: 0, не применено: 0
+Mutation score: 100%
