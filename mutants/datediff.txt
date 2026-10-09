@@ -1,0 +1,9 @@
+# Ручные мутанты модуля datediff (готовит Участник Б — тестировщик модуля А).
+# Формат строки: ID|файл|номер строки|было|стало|описание
+# Символ | внутри полей использовать нельзя: он разделяет поля.
+# Если вы меняете код модуля, номера строк надо поправить: скрипт сообщит "НЕ ПРИМЕНЁН".
+MA1|datediff/datediff.go|33|month == 2 && IsLeapYear(year)|month == 2|DaysInMonth: в феврале всегда 29 дней
+MA2|datediff/datediff.go|48|d.Day >= 1|d.Day >= 0|IsValid: день 0 считается допустимым
+MA3|datediff/datediff.go|41|d.Year < 1|d.Year < 0|IsValid: год 0 считается допустимым
+MA4|datediff/datediff.go|79|y/400 + doy|doy|ordinal: удалено правило «делится на 400»
+MA5|datediff/datediff.go|69|!IsValid(b)|false|DaysBetween: вторая дата не проверяется

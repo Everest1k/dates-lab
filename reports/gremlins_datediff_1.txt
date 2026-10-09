@@ -1,0 +1,46 @@
+gremlins unleash --timeout-coefficient 50 --workers 1 ./datediff
+Starting...
+Gathering coverage... go: no module dependencies to download
+done in 98.649ms
+      KILLED CONDITIONALS_NEGATION at datediff.go:24:16
+      KILLED ARITHMETIC_BASE at datediff.go:24:13
+      KILLED CONDITIONALS_NEGATION at datediff.go:24:34
+      KILLED ARITHMETIC_BASE at datediff.go:24:29
+      KILLED CONDITIONALS_NEGATION at datediff.go:24:51
+      KILLED ARITHMETIC_BASE at datediff.go:24:46
+      KILLED CONDITIONALS_BOUNDARY at datediff.go:30:11
+      KILLED CONDITIONALS_NEGATION at datediff.go:30:11
+      KILLED CONDITIONALS_BOUNDARY at datediff.go:30:24
+      KILLED CONDITIONALS_NEGATION at datediff.go:30:24
+      KILLED CONDITIONALS_NEGATION at datediff.go:33:11
+      KILLED INVERT_NEGATIVES at datediff.go:36:24
+      KILLED ARITHMETIC_BASE at datediff.go:36:24
+       LIVED CONDITIONALS_BOUNDARY at datediff.go:41:12
+      KILLED CONDITIONALS_NEGATION at datediff.go:41:12
+      KILLED CONDITIONALS_NEGATION at datediff.go:45:9
+      KILLED CONDITIONALS_BOUNDARY at datediff.go:48:15
+      KILLED CONDITIONALS_NEGATION at datediff.go:48:15
+      KILLED CONDITIONALS_BOUNDARY at datediff.go:48:29
+      KILLED CONDITIONALS_NEGATION at datediff.go:48:29
+      KILLED CONDITIONALS_BOUNDARY at datediff.go:58:16
+   TIMED OUT CONDITIONALS_NEGATION at datediff.go:58:16
+   TIMED OUT INCREMENT_DECREMENT at datediff.go:58:28
+      KILLED INVERT_NEGATIVES at datediff.go:72:20
+      KILLED ARITHMETIC_BASE at datediff.go:72:20
+       LIVED INVERT_NEGATIVES at datediff.go:77:14
+       LIVED ARITHMETIC_BASE at datediff.go:77:14
+      KILLED ARITHMETIC_BASE at datediff.go:79:37
+       LIVED ARITHMETIC_BASE at datediff.go:79:29
+       LIVED INVERT_NEGATIVES at datediff.go:79:21
+       LIVED ARITHMETIC_BASE at datediff.go:79:21
+       LIVED ARITHMETIC_BASE at datediff.go:79:15
+      KILLED ARITHMETIC_BASE at datediff.go:79:10
+      KILLED ARITHMETIC_BASE at datediff.go:79:18
+      KILLED ARITHMETIC_BASE at datediff.go:79:24
+      KILLED ARITHMETIC_BASE at datediff.go:79:32
+
+Mutation testing completed in 24 seconds 117 milliseconds
+Killed: 27, Lived: 7, Not covered: 0
+Timed out: 2, Not viable: 0, Skipped: 0
+Test efficacy: 79.41%
+Mutator coverage: 100.00%

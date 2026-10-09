@@ -1,0 +1,10 @@
+./scripts/manual_mutants.sh mutants/datediff.txt
+ID    РЕЗУЛЬТАТ ОПИСАНИЕ
+MA1   KILLED      DaysInMonth: в феврале всегда 29 дней
+MA2   LIVED       IsValid: день 0 считается допустимым
+MA3   LIVED       IsValid: год 0 считается допустимым
+MA4   LIVED       ordinal: удалено правило «делится на 400»
+MA5   LIVED       DaysBetween: вторая дата не проверяется
+----
+Убито: 1, выжило: 4, не применено: 0
+Mutation score: 20%
