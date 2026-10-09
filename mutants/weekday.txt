@@ -1,0 +1,10 @@
+# Ручные мутанты модуля weekday (готовит Участник А — тестировщик модуля Б).
+# Формат строки: ID|файл|номер строки|было|стало|описание
+# Символ | внутри полей использовать нельзя: он разделяет поля.
+# Если вы меняете код модуля, номера строк надо поправить: скрипт сообщит "НЕ ПРИМЕНЁН".
+MB1|weekday/weekday.go|32|"пятница"|"Пятница"|WeekdayName: опечатка в названии дня (заглавная буква)
+MB2|weekday/weekday.go|66|wd >= Saturday|wd == Saturday|IsWeekend: воскресенье не считается выходным
+MB3|weekday/weekday.go|99|w <= Friday|w < Friday|WorkdaysInMonth: пятница не считается рабочим днём
+MB4|weekday/weekday.go|80|day <= n|day < n|CountWeekdayInMonth: последний день месяца не учитывается
+MB5|weekday/weekday.go|117|case 4, 6, 9, 11:|case 4, 6, 9:|daysInMonth: в ноябре 31 день
+MB6|weekday/weekday.go|127|d.Day >= 1|d.Day >= 0|isValid: день 0 считается допустимым

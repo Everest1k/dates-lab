@@ -16,10 +16,10 @@ html: cover
 
 # Автоматическое мутационное тестирование (Gremlins)
 mutate-a:
-	gremlins unleash --timeout-coefficient 10 ./datediff
+	gremlins unleash --timeout-coefficient 50 --workers 1 ./datediff
 
 mutate-b:
-	gremlins unleash --timeout-coefficient 10 ./weekday
+	gremlins unleash --timeout-coefficient 50 --workers 1 ./weekday
 
 # Ручные мутанты
 manual-a:

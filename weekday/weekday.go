@@ -1,4 +1,5 @@
 // и подсчёты по дням недели (григорианский календарь).
+// pafafa
 package weekday
 
 import "errors"

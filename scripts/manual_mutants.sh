@@ -25,7 +25,7 @@ while IFS='|' read -r id file line from to desc; do
     'if ($. == $ENV{LN}) { my ($f,$t)=($ENV{FROM},$ENV{TO}); s/\Q$f\E/$t/ }' "$file"
 
   if cmp -s "$file" "$backup"; then
-    printf '%-5s %-11s %s\n' "$id" "НЕ ПРИМЕНЁН" "в строке $line нет текста «$from»"
+    printf '%-5s %-11s %s\n' "$id" "НЕ ПРИМЕНЁН" "в строке $line нет текста «${from}»"
     skipped=$((skipped+1))
   elif go test -count=1 -timeout 20s "$pkg" </dev/null >/dev/null 2>&1; then
     printf '%-5s %-11s %s\n' "$id" "LIVED" "$desc"
