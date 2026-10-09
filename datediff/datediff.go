@@ -21,7 +21,7 @@ var monthDays = [12]int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 // IsLeapYear сообщает, високосный ли год: год делится на 4 и не делится
 // на 100, либо делится на 400.
 func IsLeapYear(year int) bool {
-	return year%4 == 0 && year%100 != 0
+	return year%4 == 0 && (year%100 != 0 || year%400 == 0)
 }
 
 // DaysInMonth возвращает число дней в месяце month года year.
